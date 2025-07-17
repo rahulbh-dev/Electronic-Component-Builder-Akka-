@@ -1,0 +1,21 @@
+// name: Rahul Bhardwaj, m. no. : 237868
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "com.typesafe.akka:akka-actor-typed_2.13:2.8.4"
+    implementation "org.slf4j:slf4j-simple:2.0.7"
+    testImplementation "com.typesafe.akka:akka-actor-testkit-typed_2.13:2.8.4"
+}
+
+// Java toolchain config for JDK 20
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(20)
+    }
+}
